@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sophia Ramalli — Physics at Grinnell, Founder & CEO of SERC, rocket builder, aspiring astronaut, pilot in training.">
+<meta property="og:title" content="Sophia Ramalli">
+<meta property="og:description" content="Physics. Rockets. Robots. Research. Aviation.">
+<title>Sophia Ramalli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.home-wrap{min-height:100vh;padding:90px 48px 40px}
+.home-inner{max-width:1400px;margin:0 auto}
+
+.home-hero{padding:40px 0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+.home-meta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;padding-bottom:20px;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:40px;grid-column:1/-1}
+.home-meta .c{text-align:center;color:var(--text)}
+.home-meta .r{text-align:right}
+
+.home-name{font-family:'Syne',sans-serif;font-size:clamp(3rem,9vw,7.5rem);line-height:0.85;font-weight:800;letter-spacing:-0.035em;background:linear-gradient(135deg,var(--text) 0%,var(--accent) 55%,var(--hot) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.home-tags{margin-top:24px;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:var(--accent);display:flex;flex-wrap:wrap;gap:14px 24px}
+.home-tags span::before{content:'▸ ';color:var(--hot)}
+.home-bio{margin-top:32px;max-width:620px;font-family:'Syne',sans-serif;font-size:clamp(1.1rem,1.8vw,1.4rem);line-height:1.45;font-weight:500;color:var(--text)}
+.home-bio em{color:var(--hot);font-style:normal}
+
+.home-hero-img{position:relative;border:1px solid var(--line-strong)}
+.home-hero-img img{display:block;width:100%;height:auto}
+.home-hero-img .corner{position:absolute;width:14px;height:14px;border-color:var(--hot)}
+
+.media-strip{margin-top:16px;padding:20px 24px;border:1px solid var(--hot);background:rgba(255,107,53,0.04);display:flex;gap:18px;align-items:center;flex-wrap:wrap;grid-column:1/-1}
+.media-strip .label{font-size:10px;letter-spacing:0.25em;color:var(--hot);text-transform:uppercase;font-weight:700}
+.media-strip .item{font-size:12px;color:var(--text-dim);display:flex;align-items:center;gap:8px}
+.media-strip .item b{color:var(--text);font-weight:500}
+
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px}
+.tile{position:relative;background:var(--bg-card);border:1px solid var(--line);padding:24px 20px;min-height:180px;display:flex;flex-direction:column;justify-content:space-between;transition:all .3s;overflow:hidden}
+.tile::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 60%,var(--tile-color,var(--hot)) 100%);opacity:0.08;transition:opacity .3s;pointer-events:none}
+.tile:hover{border-color:var(--tile-color,var(--hot));transform:translateY(-4px)}
+.tile:hover::before{opacity:0.2}
+.tile-num{font-size:10px;letter-spacing:0.25em;color:var(--tile-color);text-transform:uppercase;font-weight:600}
+.tile-title{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;color:var(--text);margin-top:auto}
+.tile-desc{color:var(--text-dim);font-size:11px;line-height:1.6;margin-top:6px}
+.tile-arrow{margin-top:16px;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--tile-color);font-weight:600}
+.tile.serc    {--tile-color:#FF6B35}
+.tile.rockets {--tile-color:#E14D2A}
+.tile.robotics{--tile-color:#37D6B8}
+.tile.research{--tile-color:#FFC857}
+.tile.aviation{--tile-color:#7FB8FF}
+
+@media(max-width:1100px){
+  .home-hero{grid-template-columns:1fr;gap:32px}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .home-wrap{padding:80px 20px 30px}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .media-strip{flex-direction:column;align-items:flex-start;gap:8px}
+}
+@media(max-width:480px){.tiles{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="page-home">
+
+<nav>
+  <a class="brand" href="index.html">S.R.</a>
+  <div class="links">
+    <a href="serc.html">SERC</a>
+    <a href="rockets.html">Rockets</a>
+    <a href="robotics.html">Robotics</a>
+    <a href="research.html">Research</a>
+    <a href="aviation.html">Aviation</a>
+  </div>
+</nav>
+
+<main>
+<div class="home-wrap">
+<div class="home-inner">
+
+  <div class="home-hero">
+    <header class="home-meta">
+      <div>SR — 2026</div>
+      <div class="c">// PERSONAL INDEX //</div>
+      <div class="r">Grinnell · Bay Area</div>
+    </header>
+
+    <div>
+      <h1 class="home-name">SOPHIA<br>RAMALLI</h1>
+      <div class="home-tags">
+        <span>Physics · Grinnell</span>
+        <span>Founder · SERC</span>
+        <span>Brazilian-American</span>
+        <span>5 languages</span>
+        <span>Tripoli L1</span>
+        <span>PPL in training</span>
+      </div>
+      <p class="home-bio">
+        I build <em>rockets</em>, <em>robots</em>, and the <em>companies</em> that ship them. Physics major at Grinnell College, heading to UC Berkeley this summer for physics research, flying single-engine planes between everything else, and conducting my life across <em>English, Portuguese, Spanish, French, and German</em>.
+      </p>
+    </div>
+
+    <div class="home-hero-img">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <img src="images/nasa_flag_selfie.jpg" alt="Sophia at NASA, standing next to a NASA flag" loading="lazy">
+    </div>
+
+    <div class="media-strip">
+      <span class="label">// AS SEEN ON</span>
+      <span class="item">📺 <b>Jornal da Band</b> — "Sophia quer ser 1ª brasileira astronauta"</span>
+      <span class="item">📖 Featured author — <b>Ases da Literatura</b> (Brazil)</span>
+    </div>
+  </div>
+
+  <div class="tiles">
+    <a class="tile serc" href="serc.html">
+      <div class="tile-num">// 01</div>
+      <div>
+        <div class="tile-title">SERC</div>
+        <div class="tile-desc">AI-powered PCB design + pick-and-place robot arm. Founder &amp; CEO.</div>
+        <div class="tile-arrow">Enter →</div>
+      </div>
+    </a>
+    <a class="tile rockets" href="rockets.html">
+      <div class="tile-num">// 02</div>
+      <div>
+        <div class="tile-title">Rockets</div>
+        <div class="tile-desc">Founder &amp; President, Grinnell Rocket Team. Tripoli L1. IREC 2026.</div>
+        <div class="tile-arrow">Enter →</div>
+      </div>
+    </a>
+    <a class="tile robotics" href="robotics.html">
+      <div class="tile-num">// 03</div>
+      <div>
+        <div class="tile-title">Robotics</div>
+        <div class="tile-desc">Stanford ASL. SO-ARM100 poster. JPL. Cummins.</div>
+        <div class="tile-arrow">Enter →</div>
+      </div>
+    </a>
+    <a class="tile research" href="research.html">
+      <div class="tile-num">// 04</div>
+      <div>
+        <div class="tile-title">Research</div>
+        <div class="tile-desc">M-dwarf spectroscopy. Physics publications. NASA L'SPACE.</div>
+        <div class="tile-arrow">Enter →</div>
+      </div>
+    </a>
+    <a class="tile aviation" href="aviation.html">
+      <div class="tile-num">// 05</div>
+      <div>
+        <div class="tile-title">Aviation</div>
+        <div class="tile-desc">PPL in training. Cessna &amp; Diamond. CA · IA · DK.</div>
+        <div class="tile-arrow">Enter →</div>
+      </div>
+    </a>
+  </div>
+
+</div>
+</div>
+</main>
+
+<footer>
+  <span>© 2026 Sophia Ramalli</span>
+  <span>Grinnell · Berkeley · Palo Alto</span>
+  <span><a href="mailto:sophiaramalli@gmail.com">sophiaramalli@gmail.com</a></span>
+</footer>
+
+</body>
+</html>

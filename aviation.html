@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviation — Sophia Ramalli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.locations{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.loc{background:var(--bg-card);border:1px solid var(--line);padding:28px;transition:border-color .3s;text-align:center}
+.loc:hover{border-color:var(--theme-accent)}
+.loc .icao{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:700;letter-spacing:0.02em;color:var(--theme-accent)}
+.loc .place{margin-top:6px;font-size:11px;letter-spacing:0.2em;color:var(--text);text-transform:uppercase}
+.loc .country{margin-top:4px;font-size:10px;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase}
+.ac-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:768px){.locations,.ac-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="page-aviation">
+
+<nav>
+  <a class="brand" href="index.html">S.R.</a>
+  <div class="links">
+    <a href="serc.html">SERC</a>
+    <a href="rockets.html">Rockets</a>
+    <a href="robotics.html">Robotics</a>
+    <a href="research.html">Research</a>
+    <a href="aviation.html" class="active">Aviation</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="page-header">
+  <div class="crumb">// 05 · FLIGHT</div>
+  <h1>Aviation</h1>
+  <p class="tagline">Working toward my FAA Private Pilot License. Training across three countries — <em>California, Iowa, and Denmark</em> — on Cessna and Diamond aircraft. Currently building hours, working the ground-school material, and learning that airplanes and rockets have more in common than they let on.</p>
+</header>
+
+<section class="block reveal">
+  <div class="img-hero">
+    <img src="images/img_2002.jpg" alt="Sophia at the controls of a Diamond aircraft, glass cockpit visible, view of coastline below" loading="lazy">
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="tele-row">
+    <div class="tele"><div class="l">Status</div><div class="v">PPL in Training</div></div>
+    <div class="tele"><div class="l">Hours Logged</div><div class="v">&lt; 10</div></div>
+    <div class="tele"><div class="l">Aircraft Types</div><div class="v">Cessna · Diamond</div></div>
+    <div class="tele"><div class="l">Countries</div><div class="v">US · DK</div></div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 05.1</span><h2>In the cockpit</h2></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px" class="cockpit-grid">
+    <div class="img-wrap">
+      <img src="images/img_4714.jpg" alt="Sophia at the controls of a Cessna with CFI in the right seat, mountains visible" loading="lazy">
+      <div class="caption"><b>// CESSNA · CALIFORNIA</b> &nbsp; Right seat with my CFI, mountains below</div>
+    </div>
+    <div class="img-wrap">
+      <img src="images/img_6399.jpg" alt="Sophia in Iowa Hawkeyes hoodie at the controls of a Cessna mid-flight, hand on yoke, instrument panel visible" loading="lazy">
+      <div class="caption"><b>// CESSNA · IOWA</b> &nbsp; Right hand on the yoke, scanning outside</div>
+    </div>
+  </div>
+  <div style="margin-top:16px" class="img-wrap">
+    <img src="images/img_4027.jpg" alt="Sophia in a Stanford Student Space Initiative shirt on the ramp next to a Cessna" loading="lazy">
+    <div class="caption"><b>// PRE-FLIGHT</b> &nbsp; On the ramp before another lesson, San Francisco Bay Area</div>
+  </div>
+  <style>@media(max-width:768px){.cockpit-grid{grid-template-columns:1fr !important}}</style>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 05.2</span><h2>Where I've flown</h2></div>
+  <div class="locations">
+    <div class="loc"><div class="icao">California</div><div class="place">United States</div><div class="country">CA · USA</div></div>
+    <div class="loc"><div class="icao">Iowa</div><div class="place">United States</div><div class="country">IA · USA</div></div>
+    <div class="loc"><div class="icao">Roskilde</div><div class="place">Denmark</div><div class="country">EKRK · DK</div></div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 05.3</span><h2>Aircraft</h2></div>
+  <div class="ac-grid">
+    <div class="card">
+      <div class="card-tag">// Training Platform</div>
+      <h3>Cessna</h3>
+      <p>The workhorse of general aviation training. Proven, forgiving, everywhere. If you can fly a Cessna you can fly almost anything in its class.</p>
+    </div>
+    <div class="card">
+      <div class="card-tag">// Training Platform</div>
+      <h3>Diamond</h3>
+      <p>Modern composite airframe, glass cockpit, efficient diesel option. Different feel in the air — slipperier, less forgiving of sloppy rudder, better visibility.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 05.4</span><h2>Community</h2></div>
+  <p style="color:var(--text-dim);font-size:14px;line-height:1.8;max-width:800px">
+    Aviation has put me in rooms with people I'd never have met otherwise. At Stanford I connected with <b>Lara Rutherford</b>, the youngest female pilot and a fellow student, to talk flying, training paths, and what it's like to be young and in the air. Small community; big learning curve.
+  </p>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 05.5</span><h2>Why</h2></div>
+  <p style="color:var(--text-dim);font-size:14px;line-height:1.8;max-width:800px">
+    Rockets get you above the atmosphere for about ninety seconds. Airplanes let you stay there — and then decide where to go. Flying is the thing I do when I want to be alone with physics for an afternoon. Also, half the aerospace engineering I care about happens because someone, somewhere, decided to figure out how to keep a small metal tube stable in moving air. Getting my hands on that directly was not optional.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Sophia Ramalli</span>
+  <span>Ad astra, slowly</span>
+  <span><a href="mailto:sophiaramalli@gmail.com">sophiaramalli@gmail.com</a></span>
+</footer>
+
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'-40px'});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body>
+</html>

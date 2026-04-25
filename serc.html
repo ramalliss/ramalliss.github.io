@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERC — Sophia Ramalli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.serc-hero{display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:center}
+.serc-hero .logo-box{background:#F5F5F5;padding:24px;border:1px solid var(--line-strong)}
+.serc-hero .logo-box img{width:100%;display:block}
+@media(max-width:900px){.serc-hero{grid-template-columns:1fr}.serc-hero .logo-box{max-width:260px}}
+</style>
+</head>
+<body class="page-serc">
+
+<nav>
+  <a class="brand" href="index.html">S.R.</a>
+  <div class="links">
+    <a href="serc.html" class="active">SERC</a>
+    <a href="rockets.html">Rockets</a>
+    <a href="robotics.html">Robotics</a>
+    <a href="research.html">Research</a>
+    <a href="aviation.html">Aviation</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="page-header">
+  <div class="crumb">// 01 · COMPANY</div>
+  <div class="serc-hero">
+    <div>
+      <h1>SERC</h1>
+      <p class="tagline">Space Engineered Robotics Creations. I'm the <em>Founder &amp; CEO.</em> We're building the full stack of PCB automation — from AI-assisted schematic generation to robotic component placement — for the 15M+ engineering students and early-career designers who find tools like KiCad and Altium too intimidating to start with.</p>
+    </div>
+    <div class="logo-box">
+      <img src="images/img_4033.jpg" alt="SERC mascot logo" loading="lazy">
+    </div>
+  </div>
+</header>
+
+<section class="block reveal">
+  <div class="tele-row">
+    <div class="tele"><div class="l">Role</div><div class="v">Founder &amp; CEO</div></div>
+    <div class="tele"><div class="l">Team</div><div class="v">12 people</div></div>
+    <div class="tele"><div class="l">Raise</div><div class="v">$500K</div></div>
+    <div class="tele"><div class="l">Patent</div><div class="v">Pending</div></div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 01.1</span><h2>MiniMEE — the flagship</h2></div>
+  <div class="card">
+    <div class="card-tag">// Product · Pre-launch</div>
+    <h3>An AI-powered PCB design assistant.</h3>
+    <p>You describe what you want to build — a motor driver, a sensor breakout, a simple audio filter. MiniMEE generates the schematic, suggests the components, flags design errors as you go, and exports something you can actually send to a fab house. It's what KiCad could have been if it had started with a chatbot interface and an LLM.</p>
+    <p style="margin-top:12px">Our beachhead is the 15M+ engineering students worldwide. Our ambition is every hardware engineer who's ever opened a schematic editor and felt overwhelmed.</p>
+    <div class="meta">
+      <div>Stack<b>React · AI · ONNX</b></div>
+      <div>Status<b>Working prototype</b></div>
+      <div>Target<b>1,000 paying users · 12 months</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 01.2</span><h2>The Robot Arm — hardware layer</h2></div>
+  <div class="card">
+    <div class="card-tag">// Hardware · In build</div>
+    <h3>4-axis pick-and-place robotic system.</h3>
+    <p>Designed for sub-millimeter placement accuracy. NEMA 17 and NEMA 8 stepper motors, TMC2209 silent drivers, ESP32 control, vision-assisted alignment via an onboard JEPA model, 24V-powered vacuum end effector on a hollow-shaft wrist. Firmware communicates over USB serial to a Flask backend that drives the web chat interface.</p>
+    <p style="margin-top:12px">Filed provisional patent with USPTO on the AI-Assisted Robotic Arm System for Automated Component Assembly, Education, and Remote Operations.</p>
+    <div class="meta">
+      <div>Axes<b>4</b></div>
+      <div>Accuracy<b>Sub-mm target</b></div>
+      <div>Control<b>ESP32 + Flask + AI</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 01.3</span><h2>The team</h2></div>
+  <p style="color:var(--text-dim);font-size:14px;line-height:1.8;max-width:800px">
+    Twelve volunteers across software, electrical, and mechanical engineering, spanning Grinnell, Virginia Tech, Purdue, Texas A&amp;M, and others. Every member contributes time on top of coursework. We're remote-first by default, in-person when we can be.
+  </p>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 01.4</span><h2>The raise</h2></div>
+  <p style="color:var(--text-dim);font-size:14px;line-height:1.8;max-width:800px">
+    Raising $500K pre-seed to take MiniMEE from working prototype to 1,000 paying users within 12 months. Interested in strategic partnerships, technical advisors, or connections into engineering education and hardware accelerator communities.
+  </p>
+  <div style="margin-top:28px">
+    <a href="mailto:spaceroboticscreations@outlook.com?subject=SERC%20Inquiry" class="cta">Inquire →</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Sophia Ramalli</span>
+  <span>SERC · Grinnell, IA</span>
+  <span><a href="mailto:spaceroboticscreations@outlook.com">spaceroboticscreations@outlook.com</a></span>
+</footer>
+
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'-40px'});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body>
+</html>

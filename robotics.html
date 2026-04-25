@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robotics — Sophia Ramalli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.img-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.img-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+@media(max-width:900px){.img-grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.img-grid-2,.img-grid-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="page-robotics">
+
+<nav>
+  <a class="brand" href="index.html">S.R.</a>
+  <div class="links">
+    <a href="serc.html">SERC</a>
+    <a href="rockets.html">Rockets</a>
+    <a href="robotics.html" class="active">Robotics</a>
+    <a href="research.html">Research</a>
+    <a href="aviation.html">Aviation</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="page-header">
+  <div class="crumb">// 03 · RESEARCH &amp; INDUSTRY</div>
+  <h1>Robotics</h1>
+  <p class="tagline">My robotics work outside of SERC — research at <em>Stanford's Autonomous Systems Lab</em>, a first-author poster at ICAPS/CPAIOR 2025 Melbourne, facility access at <em>NASA JPL</em>, and an engineering stint at <em>Cummins</em>.</p>
+</header>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 03.1</span><h2>SO-ARM100 · Stanford ASL</h2></div>
+  <div class="img-hero">
+    <img src="images/img_4034.jpg" alt="Sophia next to her SO-100 Robotic Arm research poster at ICAPS 2025 Melbourne" loading="lazy">
+  </div>
+  <div class="card">
+    <div class="card-tag">// First-author · ICAPS/CPAIOR 2025 · Naarm/Melbourne</div>
+    <h3>Teleoperated System as an Accessible Tool for Automated Learning.</h3>
+    <p>A teleoperated SO-ARM100 robotic arm designed for free-flyer platforms in microgravity environments. Integrates with LeRobot (Hugging Face's open-source robotics learning framework) for imitation learning. Addresses servo calibration, power distribution, and UART communication latency challenges.</p>
+    <p style="margin-top:12px">Work done at <b>Autonomous Systems Lab, Stanford University</b>. I was brought on to the project through <a href="https://stanfordasl.github.io/people/matt-foutter/" target="_blank" rel="noopener" style="color:var(--theme-accent);border-bottom:1px solid var(--theme-accent)"><b>Matt Foutter</b></a>, who interviewed me, offered me the opportunity, and scoped the robot gripper plan. I was then mentored through the SO-ARM100 build and experiments by <a href="https://stanfordasl.github.io/people/dan-morton/" target="_blank" rel="noopener" style="color:var(--theme-accent);border-bottom:1px solid var(--theme-accent)"><b>Dan Morton</b></a>. Future work: integrated dynamic modeling and ML-based control for microgravity conditions.</p>
+    <div class="meta">
+      <div>Venue<b>ICAPS / CPAIOR 2025</b></div>
+      <div>Lab<b>Stanford ASL</b></div>
+      <div>Stack<b>LeRobot · Hugging Face</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 03.2</span><h2>Stanford — in the lab</h2></div>
+  <div class="img-grid-2">
+    <div class="img-wrap">
+      <img src="images/img_4016.jpg" alt="Sophia at the Stanford Robotics Center with a Franka arm" loading="lazy">
+      <div class="caption"><b>// STANFORD ROBOTICS CENTER</b> &nbsp; 7-DOF Franka arm work</div>
+    </div>
+    <div class="img-wrap">
+      <img src="images/img_4039.jpg" alt="Sophia at the Autonomous Systems Lab office" loading="lazy">
+      <div class="caption"><b>// AUTONOMOUS SYSTEMS LAB</b> &nbsp; Stanford ASL — research home</div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 03.3</span><h2>JPL · Behind the scenes</h2></div>
+  <div class="img-grid-2">
+    <div class="img-wrap">
+      <img src="images/img_4037.jpg" alt="Sophia at the Charles Elachi Mission Control Center at JPL" loading="lazy">
+      <div class="caption"><b>// MISSION CONTROL</b> &nbsp; Charles Elachi Mission Control Center, NASA JPL</div>
+    </div>
+    <div class="img-wrap">
+      <img src="images/img_4038.jpg" alt="Sophia at the JPL clean room" loading="lazy">
+      <div class="caption"><b>// CLEAN ROOM</b> &nbsp; JPL spacecraft assembly facility</div>
+    </div>
+  </div>
+  <p style="color:var(--text-dim);font-size:14px;line-height:1.8;max-width:800px;margin-top:24px">
+    Hosted by <a href="https://www.statham.space/about-me/" target="_blank" rel="noopener" style="color:var(--theme-accent);border-bottom:1px solid var(--theme-accent)"><b>Dr. Shannon Statham</b></a> and <a href="https://robotics.jpl.nasa.gov/who-we-are/people/federico_rossi/" target="_blank" rel="noopener" style="color:var(--theme-accent);border-bottom:1px solid var(--theme-accent)"><b>Dr. Federico Rossi</b></a> at JPL while I was at Stanford &mdash; behind-the-scenes facility tours and conversations about their mission work. Also met researchers at Caltech and Berkeley, and connected with <b>Lara Rutherford</b>, the youngest female pilot (a fellow Stanford student) to talk flying.
+  </p>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num">// 03.4</span><h2>Timeline</h2></div>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-date">Summer 2026</div>
+      <div class="tl-content">
+        <div class="role">Summer Physics Research</div>
+        <div class="org">UC Berkeley</div>
+        <div class="desc">Joining a summer physics research program at UC Berkeley.</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-date">2025</div>
+      <div class="tl-content">
+        <div class="role">Research Assistant · Poster author</div>
+        <div class="org">Stanford Autonomous Systems Lab (ASL)</div>
+        <div class="desc">Research on teleoperated robot arms for microgravity applications. First-author poster presented at ICAPS/CPAIOR 2025 in Melbourne.</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-date">2024</div>
+      <div class="tl-content">
+        <div class="role">L'SPACE Alum</div>
+        <div class="org">NASA · Lucy Student Pipeline Accelerator &amp; Competency Enabler</div>
+        <div class="desc">Mission concept design program under NASA mentorship &mdash; systems engineering, mission proposal writing, technical communication at a NASA-pipeline standard.</div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-date">2024</div>
+      <div class="tl-content">
+        <div class="role">Engineering Intern</div>
+        <div class="org">Cummins Inc.</div>
+        <div class="desc">Engineering internship at Cummins &mdash; global leader in power solutions.</div>
+      </div>
+    </div>
+
+  </div>
+  <div style="margin-top:28px">
+    <div class="img-wrap" style="max-width:700px">
+      <img src="images/img_4046.jpg" alt="Sophia at Cummins with Steve" loading="lazy">
+      <div class="caption"><b>// CUMMINS</b> &nbsp; "The Next Generation of Power"</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Sophia Ramalli</span>
+  <span>Stanford · JPL · Cummins · NASA</span>
+  <span><a href="mailto:sophiaramalli@gmail.com">sophiaramalli@gmail.com</a></span>
+</footer>
+
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'-40px'});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body>
+</html>
