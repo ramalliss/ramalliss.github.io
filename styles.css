@@ -119,41 +119,68 @@ nav .links a.active{color:var(--text);border-bottom:1px solid var(--theme-accent
 
 .access-card{
   display:block;
-  padding:28px;
-  border:1px solid var(--line-strong);
-  background:#F5F5F5;
+  padding:30px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(180deg,#0B1D3A 0%, #081427 100%);
   text-decoration:none;
-  color:inherit;
-  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+  color:#F5F7FA;
+  transition:
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.access-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(255,255,255,0.06),
+    transparent 40%
+  );
+  pointer-events:none;
 }
 
 .access-card:hover{
-  transform:translateY(-4px);
-  border-color:#000;
-  background:#fff;
+  transform:translateY(-5px);
+  border-color:rgba(255,255,255,0.22);
+  box-shadow:0 12px 30px rgba(0,0,0,0.28);
+  background:linear-gradient(180deg,#10264A 0%, #0A1830 100%);
 }
 
 .access-label{
   font-size:11px;
-  letter-spacing:.12em;
-  color:var(--text-dim);
+  letter-spacing:.14em;
+  color:#9FB3D1;
   margin-bottom:14px;
 }
 
 .access-card h3{
   margin-bottom:12px;
+  color:#FFFFFF;
 }
 
 .access-card p{
   font-size:14px;
   line-height:1.7;
-  color:var(--text-dim);
+  color:#C8D1DC;
 }
 
 .access-link{
   display:inline-block;
-  margin-top:18px;
+  margin-top:20px;
   font-weight:600;
+  color:#FFFFFF;
+}
+
+@media(max-width:900px){
+  .access-grid{
+    grid-template-columns:1fr;
+  }
 }
 
 @media(max-width:900px){
