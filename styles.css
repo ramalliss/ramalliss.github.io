@@ -213,6 +213,86 @@ nav .links a.active{color:var(--text);border-bottom:1px solid var(--theme-accent
   color:var(--hot);
 }
 
+/* ===== ACADEMY BOX ===== */
+.academy-box {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  padding: 40px;
+  margin: 20px 0;
+  overflow: hidden;
+  /* Subtle glow using your aviation blue */
+  box-shadow: inset 0 0 30px rgba(127, 184, 255, 0.03);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(127, 184, 255, 0.1);
+  border: 1px solid var(--theme-accent);
+  color: var(--theme-accent);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.academy-info .label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.academy-info h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.academy-info p {
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.academy-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--theme-accent);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.academy-cta span {
+  transition: transform 0.3s ease;
+}
+
+.academy-cta:hover {
+  letter-spacing: 0.25em;
+}
+
+.academy-cta:hover span {
+  transform: translateX(8px);
+}
+
+/* Mobile tweak */
+@media(max-width: 768px) {
+  .academy-box { padding: 30px 20px; }
+}
+
 /* ===== SECTIONS ===== */
 section.block{padding:48px 48px 64px;max-width:1400px;margin:0 auto}
 @media(max-width:768px){section.block{padding:32px 20px}}
