@@ -13,6 +13,8 @@
 .serc-hero .logo-box{background:#F5F5F5;padding:24px;border:1px solid var(--line-strong)}
 .serc-hero .logo-box img{width:100%;display:block}
 @media(max-width:900px){.serc-hero{grid-template-columns:1fr}.serc-hero .logo-box{max-width:260px}}
+.video-embed{position:relative;width:100%;max-width:860px;aspect-ratio:16/9;margin-top:8px;border:1px solid var(--line-strong)}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 </style>
 </head>
 <body class="page-serc">
@@ -35,7 +37,7 @@
   <div class="serc-hero">
     <div>
       <h1>SERC</h1>
-      <p class="tagline">Space Engineered Robotics Creations. I'm the <em>Founder and CEO.</em> At SERC, we build AI-Automated PCB Pick-and-Place Machines focused on Space Development.
+      <p class="tagline">Space Engineered Robotics Creations. I'm the <em>Founder and CEO.</em> At SERC, we build AI-Automated PCB Pick-and-Place Machines focused on Space Development &mdash; end-to-end, both <em>hardware and software</em>.
        </div>
       <div class="logo-box">
       <img src="images/robot.png.jpg" alt="SERC mascot logo" loading="lazy">
@@ -67,8 +69,31 @@
   <div class="tele-row">
     <div class="tele"><div class="l">Role</div><div class="v">Founder &amp; CEO</div></div>
     <div class="tele"><div class="l">Team</div><div class="v">13 people</div></div>
-    <div class="tele"><div class="l">Raise</div><div class="v">$500K</div></div>
+    <div class="tele"><div class="l">Raise</div><div class="v">$3M pre-seed</div></div>
     <div class="tele"><div class="l">Patent</div><div class="v">Approved</div></div>
+    <div class="tele"><div class="l">NASA SBIR</div><div class="v">Applied</div></div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num"></span><h2>What we're building</h2></div>
+  <div class="card">
+    <div class="card-tag">// Vision · Space Development</div>
+    <p>SERC builds AI-automated PCB pick-and-place machines that handle electronic components end-to-end &mdash; both the <b>hardware</b> (our robotic arm) and the <b>software</b> (our AI design and control platform). We serve two worlds at once.</p>
+    <p style="margin-top:12px">For <b>hobbyists and learners</b>, MiniMEE makes it possible to design and assemble your own electronics without needing to be an electrical engineer. For <b>aerospace companies</b>, our SpaceMiniMEE platform accelerates production of the electronics inside <b>CubeSats, Mars rovers, Mars boats, rockets and radios</b> &mdash; so teams can build flight-ready boards faster, without a dedicated EE for every project.</p>
+    <p style="margin-top:12px">The end goal is bigger than the factory floor: a machine capable enough to be sent to <b>space stations to repair and replace components in place</b> &mdash; doing the hands-on electronics work that would otherwise require an astronaut, and letting us go further into space.</p>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="section-title"><span class="num"></span><h2>MiniMEE in action</h2></div>
+  <div class="card">
+    <div class="card-tag">// Demo · Live prototype</div>
+    <h3>Watch the 4-axis arm move in real time.</h3>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/qnftAa_v-a4" title="MiniMEE by SERC - AI-assisted robotic arm demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p style="margin-top:12px">See the full demo and our products on the <a href="https://pcbworkspace-serc.github.io/website/?v=1" target="_blank" rel="noopener" style="color:var(--theme-accent);border-bottom:1px solid var(--theme-accent)">official SERC platform &rarr;</a></p>
   </div>
 </section>
 
@@ -102,7 +127,7 @@
 <section class="block reveal">
   <div class="section-title"><span class="num"></span><h2>The raise</h2></div>
   <p style="color:var(--text-dim);font-size:14px;line-height:1.8;max-width:800px">
-    Raising $500K pre-seed to take MiniMEE from working prototype to 1,000 paying users within 12 months. If you are interested in partnerships or connections at SERC, use the button below to send us a message.
+    Raising $3M pre-seed to take MiniMEE from working prototype to a production-ready platform serving both makers and aerospace teams &mdash; scaling the hardware build, the AI software, and the SpaceMiniMEE mission extensions (CubeSats, Mars rovers, rockets, and more). We have also submitted an application to the <b>NASA SBIR</b> program. If you are interested in partnerships, investment or connections at SERC, use the button below to send us a message.
   </p>
   <div style="margin-top:28px">
     <a href="mailto:spaceroboticscreations@outlook.com?subject=SERC%20Inquiry" class="cta">Inquire →</a>
